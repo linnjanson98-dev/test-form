@@ -1,0 +1,24 @@
+/*header{
+    text-align: center;
+    text-decoration: underline;
+}*/
+form{
+    margin-left: 10%;
+    padding: 10px;
+    width: 40%;
+    background-color: grey;
+}
+
+input[type="text"]{
+    text-align: center;
+}
+/*Nånting går inte som det ska här, rutan vill inte align med restan av formuläret, 
+tror jag saknar någon funktion för att lösa det. Kanske nöja mig med något annat så länge!
+Kanske bara sätta fasta positioner med px istället för % tills jag kan lista ut vad som blir knepigt*/
+input[type="submit"]{
+    margin-left: 80%;
+    padding: 5px;
+}
+p{
+    text-align: left;
+}
