@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Personlig information inför eventet </h1> <!-- Vill gärna ha texten underlined -->
+        <!-- Kort text här om vad formuläret är till för -->
+    </header>
+    <main>
+        <form action="tack.html" method="post"> <!-- post och inte get för get skickar via url, och då syns lösenordet, inte bra! -->
+            
+            <label for="namn"> Namn: </label>
+            <input type="text" id="namn" name="namn"><br><br>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <p> Har du någon allergi?</p>
+            <!-- Drop-lista med alternativ om allergier-->
+            <label for="allergier" > Välj: </label> 
+            <select name="allergier" id="allergier">
+                <option value="inget">Inget</option>
+                <option value="lactos">Laktos</option>
+                <option value="gluten">Gluten</option>
+                <option value="nötter">Nötter</option>
+                <option value="annat">Annat</option>
+            </select><br><br>
+            <label for="meddelande">Skriv annan allergi här: </label><br>
+            <textarea name="meddelande" id="meddelande" rows="4" cols="50"></textarea><br><br>
+            
+            <p>Vill du få information och uppdateringar om eventet på din mail?</p>
+            <label> 
+                <input type="radio" name="uppdateringar" value="ja" checked> Ja
+            </label>
+            <label>
+                <input type="radio" name="uppdateringar" value="nej"> Nej
+            </label><br><br>
+
+            <input type="submit" value="Skicka">
+        </form>
+    </main>
+</body>
+</html>
