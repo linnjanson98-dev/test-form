@@ -1,0 +1,49 @@
+head, body{
+    background-color: rgb(150, 203, 166);
+}
+
+header{
+    margin-left: 50px;
+    width: 700px;
+    padding: 10px;
+    background-color: rgb(255, 237, 212);
+    border: 2px solid black;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin-left: 50px;
+    width: 700px;
+    padding: 10px;
+    background-color: rgb(254, 246, 234);
+    border: 2px solid black;
+}
+
+main>section{
+    border-bottom: 2px dotted black;
+    text-align: center;
+}
+
+form{
+    padding: 10px;
+}
+
+form>section>p{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form>section:nth-child(4){
+    padding-bottom: 25px;
+    border-bottom: 2px dotted black;
+}
+
+input[type="submit"]{
+    margin-left: 580px;
+    width:100px;
+    padding: 5px;
+}

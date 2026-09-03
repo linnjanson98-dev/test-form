@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Personlig information inför eventet </h1> <!-- Vill gärna ha texten underlined -->
+        <!-- Kort text här om vad formuläret är till för -->
+    </header>
+    <main>
+        <section>
+            <p>
+                Välkommen till vårt event! <br><br>
+                För att få ha en så rolig och rockig helg behöver vi lite mer information om dig. <br>
+                Fyll i formuläret nedan med din information och önskemål. <br>
+                Tack för att du tar dig tid att fylla i detta!
+            </p>
+        </section> <br>
+
+        <form action="tack.html" method="post"> <!-- post och inte get för get skickar via url, och då syns lösenordet, inte bra! -->
+            
+            <section>
+                <p> Skriv in ditt namn och din mailadress så vi kan kontakta dig om det behövs. </p>
+                
+                <label for="namn"> Namn: </label>
+                <input type="text" id="namn" name="namn"><br><br>
+
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email"><br><br>
+            </section>
+            
+            <section>
+                <p> Under eventet finns det möjlighet att få handledning av vår gitarrist! <br>
+                    Välj en tid som passar dig bäst och om du inte vill ha handledning, välj "Ingen". </p>
+            
+
+                <!-- Drop-lista med alternativ om handledningstider-->
+                <label for="handledning">Fredag</label>
+                <select name="handledning" id="handledning">
+                    <option value="ingen">Ingen</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:30">14:30</option>
+                </select><br><br>
+                <label for="handledning">Lördag</label>
+                <select name="handledning" id="handledning">
+                    <option value="ingen">Ingen</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:30">14:30</option>
+                </select><br><br>
+                <label for="handledning">Söndag</label>
+                <select name="handledning" id="handledning">
+                    <option value="ingen">Ingen</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:30">14:30</option>
+                </select><br><br>
+            </section>
+
+           <section> <!-- checkbox om allergier -->
+                 <p> Har du någon allergi? <br> (Välj alla som gäller annars inget)</p>
+                <input type="checkbox" name="allergi" value="inget"> Inget
+                <input type="checkbox" name="allergi" value="laktos"> Laktos
+                <input type="checkbox" name="allergi" value="mjölk"> Mjölk
+                <input type="checkbox" name="allergi" value="gluten"> Gluten
+                <input type="checkbox" name="allergi" value="nötter"> Nötter
+                <input type="checkbox" name="allergi" value="annat"> Annat<br><br>
+
+                <label for="meddelande">Skriv annan allergi här: </label><br>
+                <textarea name="meddelande" id="meddelande" rows="4" cols="30"></textarea><br><br>
+           </section> 
+           
+           <section>
+                <p> Ska du på konserten på fredagen? <br>
+                Ladda isåfall upp din biljett här så kommer du att få ditt entrepass direkt vid incheckningen i byggnaden.</p>
+                <label for="biljett"> Ladda upp fil: </label>
+                <input type="file" id="biljett" name="biljett">
+           </section> <br><br>
+            
+           <section>
+                <label for="meddelande">Övrig information: </label><br>
+                <textarea name="meddelande" id="meddelande" rows="4" cols="30"></textarea><br><br>
+                 <p>Vill du få information och uppdateringar om eventet på din mail? </p>
+                <label> 
+                    <input type="radio" name="uppdateringar" value="ja" checked> Ja
+                </label>
+                <label>
+                    <input type="radio" name="uppdateringar" value="nej"> Nej
+                </label><br><br>
+                <input type="submit" value="Skicka">
+            </section>
+            
+        </form>
+    </main>
+</body>
+</html>
