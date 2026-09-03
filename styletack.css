@@ -1,3 +1,18 @@
+
+body{
+    background-color: rgb(150, 203, 166);
+}
+
+main{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 700px;
+    padding: 10px;
+    background-color: rgb(254, 246, 234);
+    border: 2px solid black;
+}
+
 p{
+    margin-top: 50px;
     text-align: center;
 }
